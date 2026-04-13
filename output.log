@@ -1,0 +1,52 @@
+──╼ $./synthid_remover notgemini.ppm definitelynotgemini.ppm -s 0.9
+Loading image: notgemini.ppm
+=================================================
+       SynthID Watermark Remover v1.0
+=================================================
+Image dimensions: 1024x1024
+Processing configuration:
+  - Watermark strength: 90%
+  - Number of passes: 3
+  - Multi-resolution mode: ON
+  - Channel weights: G=1 R=0.85 B=0.7
+=================================================
+
+[1/5] Extracting color channels...
+
+--- Pass 1/3 ---
+  Processing Green channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+  Processing Red channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+  Processing Blue channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+
+--- Pass 2/3 ---
+  Processing Green channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+  Processing Red channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+  Processing Blue channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+
+--- Pass 3/3 ---
+  Processing Green channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+  Processing Red channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+  Processing Blue channel...
+    Target frequency region: [204.8, 512] x [204.8, 512]
+
+[4/5] Applying multi-resolution refinement...
+    Applying frequency-domain refinement at multiple scales...
+[5/5] Reconstructing image...
+
+=================================================
+Processing complete!
+=================================================
+Saving result to: definitelynotgemini.ppm
+Done!
+┌─[berzi@berzimachine]─[~/Documents/synthid_remover]
+└──╼ $convert definitelynotgemini.ppm definitelynotgemini.png
+┌─[berzi@berzimachine]─[~/Documents/synthid_remover]
+└──╼ $convert notgemini.ppm notgemini.png
